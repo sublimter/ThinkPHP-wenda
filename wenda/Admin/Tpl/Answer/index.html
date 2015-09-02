@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/public.css" />
+	<script type="text/javascript" src='__PUBLIC__/js/jquery-1.7.2.min.js'></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			$( '.del' ).click( function () {
+				return confirm('确认删除？');
+			} );
+		}
+	</script>
+</head>
+<body>
+	<table class="table">
+		<tr height='60'>
+			<th>ID</th>
+			<th>回答内容</th>
+			<th>提问时间</th>
+			<th>操作</th>
+		</tr>
+		<foreach name='answer' item='v'>
+			<tr height='50'>
+				<td align='center' width='8%'>{$v.id}</td>
+				<td>{$v.content}</td>
+				<td align='center'>{$v.time|date='Y-m-d H:i', ###}</td>
+				<td align='center'>
+					<a href="{:U('delAnswer', array('id' => $v['id'], 'uid' => $v['uid']))}" class='del'>删除</a>
+				</td>
+			</tr>
+		</foreach>
+		<tr height='60'>
+			<td colspan='6' align='center'>
+				{$page}
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

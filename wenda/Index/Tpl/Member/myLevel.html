@@ -1,0 +1,65 @@
+<include file='Common:header'/>
+	<link rel="stylesheet" href="__PUBLIC__/Css/member.css" />
+	<script type="text/javascript" src='__PUBLIC__/Js/member.js'></script>
+</head>
+<body>
+	<include file='Common:top'/>
+<!--------------------中部-------------------->
+	<div id='center'>
+		<include file='Common:mleft'/>
+		<!-- 下面的变量数据在mleft模版中已获取了 -->
+		<div id='right'>
+			<p class='title'>{$role}的等级</p>
+			<p class='lv-info'>恭喜您，已经升到 <span>Lv{$level}</span> 级啦，距下一级还需 <span><?php echo C('LV'.($level+1))-$exp;?></span> 经验值!</p>
+			<div class='lv-rule'>
+				<p><span>等级规则</span></p>
+				<table class='lv-exp'>
+					<tr>
+						<th>等级</th>
+						<th>经验值</th>
+					</tr>
+					<!-- 循环获取各级经验 -->
+					<for start='1' end='21' name='i'>
+						<if condition='$level neq $i'>
+							<tr>
+								<td>{$i}</td>
+								<td><?php echo C('LV'.$i);?></td>
+							</tr>
+						<else/>
+							<tr class='cur'>
+								<td>你现在<span>{$level}</span>级</td>
+								<td><span><?php echo C('LV'.$i);?></span></td>
+							</tr>
+						</if>
+					</for>
+				</table>
+			</div>
+			<div class='lv-rule'>
+				<p><span>经验获取</span></p>
+				<table class='lv-exp'>
+					<tr>
+						<th>操作</th>
+						<th>获得经验值</th>
+					</tr>
+					<tr>
+						<td>每天登录</td>
+						<td>{$Think.config.lv_login}</td>
+					</tr>
+					<tr>
+						<td>提问</td>
+						<td>{$Think.config.lv_ask}</td>
+					</tr>
+					<tr>
+						<td>回答</td>
+						<td>{$Think.config.lv_answer}</td>
+					</tr>
+					<tr>
+						<td>采纳答案</td>
+						<td>{$Think.config.lv_adopt}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+<!--------------------中部结束-------------------->
+<include file='Common:bottom'/>

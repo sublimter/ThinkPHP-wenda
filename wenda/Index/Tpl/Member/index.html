@@ -1,0 +1,72 @@
+<include file='Common:header'/>
+	<link rel="stylesheet" href="__PUBLIC__/Css/member.css" />
+</head>
+<body>
+	<include file="Common:top"/>
+<!--------------------中部-------------------->
+	<div id='center'>
+		<include file='Common:mleft'/>
+		<div id='right'>
+			<p class='title'>{$role}的首页</p>
+			<ul class='property'>
+				<li>金币：<span>{$msg.point}</span></li>
+				<li>经验值：<span>{$msg.exp}</span></li>
+				<li>采纳率：<span>{:round($msg['adopt'] / $msg['answer'] * 100, 1)}%</span></li>
+			</ul>
+			<div class='list'>
+				<p><span>{$role}的提问 <b>(共{$msg.ask}条)</b></span><a href="">更多>></a></p>
+				<table>
+					<!--避免变量重名，如果是ask会不出结果，应为和mleft页面中ask重名了-->
+					<if condition='!$myask'>
+						<tr height='140'>
+							<td>你还没有进行过提问</td>
+						</tr>
+					<else/>
+						<tr>
+							<th class='t1'>标题</th>
+							<th>回答</th>
+							<th class='t3'>时间</th>
+						</tr>
+						<foreach name='myask' item='v'>
+							<tr>
+								<td class='t1'>
+									<a href="{:U('Show/index',array('id'=>$v['id']))}">{$v.content}</a><span>[{$v.name}]</span>
+								</td>
+								<td>{$v.answer}</td>
+								<td class='t3'>{$v.time|time_to_format=###}</td>
+							</tr>
+						</foreach>
+					</if>
+				</table>
+			</div>
+			<div class='list'>
+				<p><span>{$role}的回答 <b>(共{$msg.answer}条)</b></span><a href="">更多>></a></p>
+				<table>
+					<if condition='!$myAnswer'>
+						<tr height='140'>
+							<td>你还没有进行过回答</td>
+						</tr>
+					<else/>
+						<tr>
+							<th class='t1'>标题</th>
+							<th>回答</th>
+							<th class='t3'>更新时间</th>
+						</tr>
+						<foreach name='myAnswer' item='v'>
+							<tr>
+								<td class='t1'>
+									<a href="{:U('Show/index', array('id' => $v['id']))}">{$v.content}</a><span>[{$v.name}]</span>
+								</td>
+								<td>{$v.answer}</td>
+								<td class='t3'>{$v.time|time_to_format=###}</td>
+							</tr>
+						</foreach>
+					</if>
+				</table>
+			</div>
+		</div>
+	</div>
+<!--------------------中部结束-------------------->
+
+<!--------------------底部-------------------->
+<include file='Common:bottom'/>

@@ -1,0 +1,1243 @@
+[ 2015-05-29T20:44:25+08:00 ] 127.0.0.1 /wenda/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001648s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000261s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000230s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000245s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000220s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000232s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.002149s ]
+SQL: SELECT * FROM `wd_ask` WHERE ( `solve` = 0 ) AND ( `reward` = 0 ) LIMIT 5   [ RunTime:0.000283s ]
+SQL: SELECT * FROM `wd_ask` WHERE ( `solve` = 0 ) AND ( `reward` > 0 ) LIMIT 5   [ RunTime:0.000238s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000315s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000450s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000228s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000206s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031581s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000298s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000227s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000129s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001137s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000495s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2015-05-29T20:44:25+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000493s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+
+[ 2015-05-29T20:45:04+08:00 ] 127.0.0.1 /wenda/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001321s ]
+SQL: SELECT * FROM `wd_ask` WHERE ( `solve` = 0 ) AND ( `reward` = 0 ) LIMIT 5   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `wd_ask` WHERE ( `solve` = 0 ) AND ( `reward` > 0 ) LIMIT 5   [ RunTime:0.000190s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.002269s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000352s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000424s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000216s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000213s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033603s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000335s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000226s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000134s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001152s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000434s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2015-05-29T20:45:04+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000355s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+
+[ 2015-05-29T20:46:15+08:00 ] 127.0.0.1 /wenda/index.php/Show/index/id/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000380s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001026s ]
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.002048s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.reward AS reward,ask.solve AS solve,ask.time AS time,ask.cid AS cid,ask.answer AS answer,user.id AS uid,user.username AS username,user.exp AS exp FROM wd_ask ask LEFT JOIN wd_user user ON ask.uid=user.id WHERE ( ask.id = 3 ) LIMIT 1   [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `wd_answer` [ RunTime:0.002217s ]
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.001403s ]
+SQL: SELECT answer.id AS id,answer.content AS content,answer.time AS time,answer.adopt AS adopt,answer.aid AS aid,user.id AS uid,user.username AS username,user.face AS face,user.exp AS exp,user.answer AS answer,user.adopt AS adopt FROM wd_answer answer LEFT JOIN wd_user user ON answer.uid=user.id WHERE ( answer.adopt = 1 ) AND ( answer.aid = 3 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wd_answer` WHERE ( answer.adopt = 0 ) AND ( `aid` = 3 ) LIMIT 1   [ RunTime:0.000323s ]
+ERR: 1054:Unknown column 'answer.adopt' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `wd_answer` WHERE ( answer.adopt = 0 ) AND ( `aid` = 3 ) LIMIT 1  
+SQL: SELECT answer.id AS id,answer.content AS content,answer.time AS time,answer.adopt AS adopt,answer.aid AS aid,user.id AS uid,user.username AS username,user.face AS face,user.exp AS exp,user.answer AS answer,user.adopt AS adopt FROM wd_answer answer LEFT JOIN wd_user user ON answer.uid=user.id WHERE ( answer.adopt = 0 ) AND ( answer.aid = 3 ) LIMIT 0,5   [ RunTime:0.000481s ]
+SQL: SELECT * FROM `wd_ask` WHERE ( `cid` = 7 ) AND ( `solve` = 0 ) AND ( `id` <> 3 ) LIMIT 5   [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.002221s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000333s ]
+SQL: SELECT * FROM `wd_category`  [ RunTime:0.000282s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000569s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000371s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000305s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051260s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000286s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000227s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000130s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001168s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000557s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2015-05-29T20:46:15+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000369s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+
+[ 2015-05-29T20:46:39+08:00 ] 127.0.0.1 /wenda/index.php/Member/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000437s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.001623s ]
+SQL: SELECT * FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.002307s ]
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001457s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `uid` = 1 ) ORDER BY ask.time DESC LIMIT 5   [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `wd_answer` [ RunTime:0.001463s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.answer AS answer,answer.time AS time,answer.adopt AS adopt,category.name AS name FROM wd_ask ask LEFT JOIN wd_answer answer ON ask.id=answer.aid LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( answer.uid = 1 ) ORDER BY answer.time DESC LIMIT 5   [ RunTime:0.000398s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000442s ]
+SQL: SELECT `id`,`username`,`face`,`answer`,`adopt`,`ask`,`point`,`exp` FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000327s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039766s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000274s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000237s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000141s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001396s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000480s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2015-05-29T20:46:39+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000356s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+
+[ 2015-05-29T20:46:53+08:00 ] 127.0.0.1 /wenda/index.php/Member/myAsk/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000443s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001664s ]
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.000943s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `uid` = 1 ) AND ( `solve` = 0 ) ORDER BY ask.time DESC LIMIT 5   [ RunTime:0.000349s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `uid` = 1 ) AND ( `solve` = 1 ) ORDER BY ask.time DESC LIMIT 5   [ RunTime:0.000352s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.001416s ]
+SQL: SELECT `id`,`username`,`face`,`answer`,`adopt`,`ask`,`point`,`exp` FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000320s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027606s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000273s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000227s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000132s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001109s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000474s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2015-05-29T20:46:53+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000360s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+
+[ 2015-05-29T20:46:54+08:00 ] 127.0.0.1 /wenda/index.php/Member/myAnswer/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000406s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.008615s ]
+SQL: SHOW COLUMNS FROM `wd_answer` [ RunTime:0.001472s ]
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001072s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.answer AS answer,answer.time AS time,answer.adopt AS adopt,category.name AS name FROM wd_ask ask LEFT JOIN wd_answer answer ON ask.id=answer.aid LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( answer.uid = 1 ) ORDER BY answer.time DESC  [ RunTime:0.000401s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wd_ask ask LEFT JOIN wd_answer answer ON ask.id=answer.aid LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( answer.uid = 1 ) AND ( answer.adopt = 1 ) LIMIT 1   [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.001938s ]
+SQL: SELECT `id`,`username`,`face`,`answer`,`adopt`,`ask`,`point`,`exp` FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000303s ]
+NOTIC: [8] Use of undefined constant count - assumed 'count' /Library/WebServer/Documents/wenda/Index/Runtime/Cache/40f01bbfc6e882b571ad4e2ab525266b.php 第 227 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033666s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000286s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000226s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000130s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001232s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000544s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2015-05-29T20:46:54+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000400s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001870s ]
+
+[ 2015-05-29T20:46:54+08:00 ] 127.0.0.1 /wenda/index.php/Member/myLevel/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000373s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.002435s ]
+SQL: SELECT `exp` FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000245s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001269s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000261s ]
+SQL: SELECT `id`,`username`,`face`,`answer`,`adopt`,`ask`,`point`,`exp` FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000232s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024011s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000276s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000226s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000129s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001220s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000542s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2015-05-29T20:46:55+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000355s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+
+[ 2015-05-29T20:47:04+08:00 ] 127.0.0.1 /wenda/index.php/Member/myPoint/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000378s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.001578s ]
+SQL: SELECT `point` FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001350s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000257s ]
+SQL: SELECT `id`,`username`,`face`,`answer`,`adopt`,`ask`,`point`,`exp` FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000255s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024947s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000317s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000235s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000140s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000343s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2015-05-29T20:47:04+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000461s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+
+[ 2015-05-29T20:47:17+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000383s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001542s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001521s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( `solve` = 0 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( `solve` = 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000346s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000441s ]
+SQL: SELECT * FROM `wd_category`  [ RunTime:0.000373s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000375s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000216s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000207s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036059s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000310s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000234s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000139s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001166s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000364s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2015-05-29T20:47:17+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000434s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+
+[ 2015-05-29T20:47:28+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/1/filter/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000465s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.000965s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000247s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001231s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( `reward` > 0 ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( ask.reward > 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000318s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000469s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000363s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000269s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000220s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028917s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000270s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000223s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000128s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001093s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2015-05-29T20:47:28+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000530s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+
+[ 2015-05-29T20:47:29+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/1/filter/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000453s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.000882s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000296s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001310s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( `solve` = 1 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( `solve` = 1 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000433s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000532s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000220s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000211s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029386s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000258s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000222s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000126s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001083s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000594s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2015-05-29T20:47:29+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000363s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+
+[ 2015-05-29T20:47:30+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/1/filter/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000455s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.010187s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000352s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001489s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( `reward` > 0 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( ask.reward > 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000393s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000446s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000468s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000236s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000213s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030266s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000267s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000222s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000128s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001090s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000537s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2015-05-29T20:47:31+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000383s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+
+[ 2015-05-29T20:47:31+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/1/filter/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000435s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001073s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000262s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001470s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( `answer` = 0 ) LIMIT 1   [ RunTime:0.000406s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( ask.answer = 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000485s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000373s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000268s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000214s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030566s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000295s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000233s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000138s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001154s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000438s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2015-05-29T20:47:31+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000527s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+
+[ 2015-05-29T20:47:34+08:00 ] 127.0.0.1 /wenda/index.php/List/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001087s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = null )  [ RunTime:0.000242s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Library/WebServer/Documents/wenda/Index/Common/common.php 第 28 行.
+SQL: SELECT `pid` FROM `wd_category` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = null )  [ RunTime:0.000187s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001637s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('1','2','3','5','6') ) AND ( `solve` = 0 ) LIMIT 1   [ RunTime:0.000258s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('1','2','3','5','6') ) AND ( `solve` = 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000543s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000396s ]
+NOTIC: [8] Undefined index: id /Library/WebServer/Documents/wenda/Index/Runtime/Cache/566aec5337abdc745e4e75fa5926da74.php 第 151 行.
+SQL: SELECT * FROM `wd_category`  [ RunTime:0.000272s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000351s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000253s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000211s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028373s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000289s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000225s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000139s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001331s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000488s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2015-05-29T20:47:34+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000700s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+
+[ 2015-05-29T20:47:35+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000377s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001122s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001734s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('13','14','33','34','35','36',2) ) AND ( `solve` = 0 ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('13','14','33','34','35','36',2) ) AND ( `solve` = 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000369s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000412s ]
+SQL: SELECT * FROM `wd_category`  [ RunTime:0.000330s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000414s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000225s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000211s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036016s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000332s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000239s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000139s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001204s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000497s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2015-05-29T20:47:35+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000876s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+
+[ 2015-05-29T20:47:36+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/2/filter/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000409s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001293s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000533s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001206s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('13','14','33','34','35','36',2) ) AND ( `reward` > 0 ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('13','14','33','34','35','36',2) ) AND ( ask.reward > 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000354s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000434s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000437s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000229s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000214s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030766s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000322s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000237s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000140s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001183s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000541s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2015-05-29T20:47:36+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000406s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+
+[ 2015-05-29T20:47:38+08:00 ] 127.0.0.1 /wenda/index.php/List/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001448s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = null )  [ RunTime:0.000244s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Library/WebServer/Documents/wenda/Index/Common/common.php 第 28 行.
+SQL: SELECT `pid` FROM `wd_category` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = null )  [ RunTime:0.000244s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001131s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('1','2','3','5','6') ) AND ( `solve` = 0 ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('1','2','3','5','6') ) AND ( `solve` = 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000380s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000459s ]
+NOTIC: [8] Undefined index: id /Library/WebServer/Documents/wenda/Index/Runtime/Cache/566aec5337abdc745e4e75fa5926da74.php 第 151 行.
+SQL: SELECT * FROM `wd_category`  [ RunTime:0.000323s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000376s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000229s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000217s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030788s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000522s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000245s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000138s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001412s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000433s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2015-05-29T20:47:38+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000508s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+
+[ 2015-05-29T20:47:39+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000376s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001315s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001390s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('10','11','12','37',3) ) AND ( `solve` = 0 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('10','11','12','37',3) ) AND ( `solve` = 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000639s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000301s ]
+SQL: SELECT * FROM `wd_category`  [ RunTime:0.000253s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000385s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000202s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000190s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029214s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000294s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000219s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000130s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001099s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000354s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2015-05-29T20:47:40+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000695s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+
+[ 2015-05-29T20:47:40+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/3/filter/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000380s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.000998s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000267s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001254s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('10','11','12','37',3) ) AND ( `reward` > 0 ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('10','11','12','37',3) ) AND ( ask.reward > 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000356s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000413s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000213s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000204s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032118s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000290s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000218s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000126s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001064s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000360s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2015-05-29T20:47:40+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+
+[ 2015-05-29T20:47:48+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/3/filter/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000426s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001399s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000274s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001398s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('10','11','12','37',3) ) AND ( `solve` = 1 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('10','11','12','37',3) ) AND ( `solve` = 1 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000405s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000341s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000485s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000288s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000332s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028562s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000264s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000194s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000109s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001071s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000809s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000922s ]
+
+[ 2015-05-29T20:47:48+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000392s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+
+[ 2015-05-29T20:48:08+08:00 ] 127.0.0.1 /wenda/index.php/Ask/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000410s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001439s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000321s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000428s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027242s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000292s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000218s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000115s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000430s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2015-05-29T20:48:08+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000355s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+
+[ 2015-05-29T20:48:20+08:00 ] 127.0.0.1 /wenda/index.php/Ask/getCate.html?pid=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000377s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001503s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000277s ]
+
+[ 2015-05-29T20:48:21+08:00 ] 127.0.0.1 /wenda/index.php/Ask/getCate.html?pid=7
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.010045s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000446s ]
+
+[ 2015-05-29T20:48:44+08:00 ] 127.0.0.1 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001076s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001320s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.000881s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001462s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wd_ask` WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( `solve` = 0 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `cid` IN ('7','8','9','32','31','30',1) ) AND ( `solve` = 0 ) ORDER BY ask.time DESC LIMIT 0,5   [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 48 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000435s ]
+SQL: SELECT * FROM `wd_category`  [ RunTime:0.000245s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000584s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000295s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000210s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031172s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000442s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000387s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001681s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001108s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001364s ]
+
+[ 2015-05-29T20:48:44+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000422s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+
+[ 2015-05-29T20:48:46+08:00 ] 127.0.0.1 /wenda/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001474s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000221s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000204s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000218s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000220s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000267s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001436s ]
+SQL: SELECT * FROM `wd_ask` WHERE ( `solve` = 0 ) AND ( `reward` = 0 ) LIMIT 5   [ RunTime:0.000267s ]
+SQL: SELECT * FROM `wd_ask` WHERE ( `solve` = 0 ) AND ( `reward` > 0 ) LIMIT 5   [ RunTime:0.000219s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000477s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000422s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000301s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000223s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032124s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000301s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000228s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000131s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001138s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000411s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2015-05-29T20:48:46+08:00 ] 127.0.0.1 /wenda/index.php/Common/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000775s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+
+[ 2015-05-29T20:49:33+08:00 ] 127.0.0.1 /wenda/index.php/Common/checkLogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000479s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.001257s ]
+SQL: SELECT `password` FROM `wd_user` WHERE ( `account` = 'admin01' ) LIMIT 1   [ RunTime:0.000249s ]
+NOTIC: 建议使用I方法替代_post
+
+[ 2015-05-29T20:49:33+08:00 ] 127.0.0.1 /wenda/index.php/Common/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.002495s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT `id`,`username`,`password`,`logintime`,`lock` FROM `wd_user` WHERE ( `account` = 'admin01' ) LIMIT 1   [ RunTime:0.000335s ]
+NOTIC: 建议使用I方法替代_post
+SQL: UPDATE `wd_user` SET `exp`=exp+1 WHERE ( `id` = 1 ) [ RunTime:0.000469s ]
+SQL: UPDATE `wd_user` SET `logintime`=1432903773 WHERE ( `id` = 1 ) [ RunTime:0.000268s ]
+
+[ 2015-05-29T20:49:33+08:00 ] 127.0.0.1 /wenda/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001600s ]
+SQL: SELECT * FROM `wd_ask` WHERE ( `solve` = 0 ) AND ( `reward` = 0 ) LIMIT 5   [ RunTime:0.000261s ]
+SQL: SELECT * FROM `wd_ask` WHERE ( `solve` = 0 ) AND ( `reward` > 0 ) LIMIT 5   [ RunTime:0.000213s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001324s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.001619s ]
+SQL: SELECT `id`,`username`,`face`,`answer`,`adopt`,`ask`,`point`,`exp` FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>1432828800 ORDER BY answer DESC LIMIT 1 [ RunTime:0.000320s ]
+SQL: SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1 [ RunTime:0.000212s ]
+SQL: SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5 [ RunTime:0.000209s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034302s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000335s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000242s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000143s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000421s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2015-05-29T20:49:43+08:00 ] 127.0.0.1 /wenda/index.php/Member/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000382s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Undefined variable: id /Library/WebServer/Documents/wenda/Index/Lib/Action/MemberAction.class.php 第 8 行.
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.008560s ]
+SQL: SELECT * FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.002048s ]
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001577s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM wd_ask ask LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( `uid` = 1 ) ORDER BY ask.time DESC LIMIT 5   [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `wd_answer` [ RunTime:0.001353s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.answer AS answer,answer.time AS time,answer.adopt AS adopt,category.name AS name FROM wd_ask ask LEFT JOIN wd_answer answer ON ask.id=answer.aid LEFT JOIN wd_category category ON ask.cid=category.id WHERE ( answer.uid = 1 ) ORDER BY answer.time DESC LIMIT 5   [ RunTime:0.000437s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 15 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /Library/WebServer/Documents/wenda/Index/Lib/TagLib/TagLibDL.class.php on line 29 and defined /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag /Library/WebServer/Documents/wenda/ThinkPHP/Lib/Template/TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `wd_category` WHERE ( `pid` = 0 ) LIMIT 10   [ RunTime:0.000444s ]
+SQL: SELECT `id`,`username`,`face`,`answer`,`adopt`,`ask`,`point`,`exp` FROM `wd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000323s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025477s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000265s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000219s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000126s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000358s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000429s ]
+

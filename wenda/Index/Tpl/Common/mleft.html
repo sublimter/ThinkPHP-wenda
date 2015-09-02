@@ -1,0 +1,51 @@
+<div id='left'>
+	<!--使用userinfo标签-->
+	<userinfo uid='$_GET["id"]'>
+		<div class='userinfo'>
+			<dl>
+				<dt>
+					<a href="{:U('Member/index', array('id' => $id))}"><img src="{$face}" width='48' height='48'/></a>
+				</dt>
+				<dd class='username'>
+					<a href="{:U('Member/index', array('id' => $id))}"><b>{$username}</b><i class='level lv{$level}' title='Level {$level}'></i></a>
+				</dd>
+				<dd>金币：<a href="" style="color: #888888;"><b class='point'>{$point}</b></a></dd>
+				<dd>经验值：{$exp}</dd>
+			</dl>
+			<table>
+				<tr>
+					<td>回答数</td>
+					<td>采纳率</td>
+					<td class='last'>提问数</td>
+				</tr>
+				<tr>
+					<td><a href="">{$answer}</a></td>
+					<td><a href="">{$adopt}</a></td>
+					<td class='last'><a href="">{$ask}</a></td>
+				</tr>
+			</table>
+		</div>
+	</userinfo>
+	<ul>
+		<li class='myhome <if condition="ACTION_NAME eq 'index'">cur</if>'>
+			<a href="{:U('Member/index', array('id' => $_GET['id']))}">{$role}的首页</a>
+		</li>
+		<li class='myask <if condition="ACTION_NAME eq 'myAsk'">cur</if>'>
+			<a href="{:U('Member/myAsk', array('id' => $_GET['id']))}">{$role}的提问</a>
+		</li>
+		<li class='myanswer <if condition="ACTION_NAME eq 'myAnswer'">cur</if>'>
+			<a href="{:U('Member/myAnswer', array('id' => $_GET['id']))}">{$role}的回答</a>
+		</li>
+		<li class='mylevel <if condition="ACTION_NAME eq 'myLevel'">cur</if>'>
+			<a href="{:U('Member/myLevel', array('id' => $_GET['id']))}">{$role}的等级</a>
+		</li>
+		<li class='mypoint <if condition="ACTION_NAME eq 'myPoint'">cur</if>'>
+			<a href="{:U('Member/myPoint', array('id' => $_GET['id']))}">{$role}的金币</a>
+		</li>
+		<if condition='isset($_SESSION["uid"]) && $_SESSION["uid"]==$_GET["id"]'>
+			<li class='mypoint <if condition="ACTION_NAME eq 'myUpload'">cur</if>'>
+				<a href="{:U('Member/myUpload', array('id' => $_GET['id']))}">{$role}的头像</a>
+			</li>
+		</if>
+	</ul>
+</div>

@@ -1,0 +1,91 @@
+<include file='Common:header'/>
+	<link rel="stylesheet" href="__PUBLIC__/Css/index.css" />
+	<script type="text/javascript" src='__PUBLIC__/Js/index.js'></script>
+</head>
+<body>
+<include file='Common:top'/>
+
+<!--------------------内容主体-------------------->
+	<div class='main'>
+		<div id='left'>
+			<p class='left-title'>所有问题分类</p>
+			<ul class='left-list'>
+				<foreach name='cate' item='v'>
+					<li class='list-l1'>
+						<div class='list-l1-wrap'>
+							<h4><a href="{:U('List/index', array('id' => $v['id']))}">{$v.name}</a></h4>
+							<ul class='list-l2'>
+								<!--先显示三个二级分类,使用thinkphp中的for循环标签-->
+								<for start='0' end='3' name='i'>
+									<li><a href="{:U('List/index',array('id'=>$v['child'][$i]['id']))}">{$v['child'][$i]['name']}</a></li>
+								</for>
+							</ul>
+						</div>
+						<!--多出来的先隐藏数据-->
+						<div class='list-more hidden'>
+							<ul>
+								<for start='3' end='count($v["child"])' name='i'>
+									<li><a href="{:U('List/index', array('id' => $v['child'][$i]['id']))}">{$v['child'][$i]['name']}</a></li>
+								</for>
+							</ul>
+						</div>
+					</li>
+				</foreach>
+			</ul>
+		</div>
+
+		<div id='center'>
+			<div id='animate'>
+				<div class='imgs-wrap'>
+					<ul>
+						<li>
+							<a href=""><img src="__PUBLIC__/Images/animate1.png" width='558' height='190'/></a>
+						</li>
+						<!-- <li>
+							<a href=""><img src="__PUBLIC__/Images/animate2.png" width='558' height='190'/></a>
+						</li>
+						<li>
+							<a href=""><img src="__PUBLIC__/Images/animate3.png" width='558' height='190'/></a>
+						</li> -->
+					</ul>
+				</div>
+				<!-- <ul class='ani-btn'>
+					<li class='ani-btn-cur'>问答系统网<i></i></li>
+					<li>后盾网论坛<i></i> </li>
+					<li style='border:none'>后盾网学习社区<i></i></li> 
+				</ul> -->
+			</div>
+
+			<dl class='answer-list'>
+				<dt>
+					<span class='wait-as'>待解决问题</span>
+					<a href=''>更多>></a>
+				</dt>
+				<foreach name='wait' item='v'>
+					<dd>
+						<a href="{:U('Show/index', array('id' => $v['id']))}">{$v.content}</a>
+						<span>{$v.answer}回答数</span>
+					</dd>
+				</foreach>
+			</dl>
+
+			<dl class='answer-list'>
+				<dt>
+					<span class='reward-as'>高分悬赏问题</span>
+					<a href=''>更多>></a>
+				</dt>
+				<foreach name='rewardAsk' item='v'>
+					<dd>
+						<a href="{:U('Show/index', array('id' => $v['id']))}"><b>{$v.reward}</b>{$v.content}</a>
+						<span>{$v.answer}回答</span>
+					</dd>
+				</foreach>
+			</dl>
+
+		</div>
+
+<include file='Common:right'/>
+	</div>
+<!--------------------内容主体结束-------------------->
+	<div class='clear'></div>
+<include file="Common:bottom"/>

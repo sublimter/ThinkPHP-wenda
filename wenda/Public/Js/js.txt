@@ -1,0 +1,9 @@
+<!--[if IE 6]>
+            <script type="text/javascript" src="__ROOT__/data/js/DD_belatedPNG_0.0.8a-min.js"></script>
+            <script type="text/javascript">
+                DD_belatedPNG.fix('.hidemenu','background');
+                DD_belatedPNG.fix('.m-btn','background');
+                DD_belatedPNG.fix('.fast','background');
+                DD_belatedPNG.fix('.menu li div','background');
+            </script>
+        <![endif]-->

@@ -1,0 +1,324 @@
+[ 2015-06-14T11:03:47+08:00 ] 0.0.0.0 /wenda/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+
+[ 2015-06-14T11:03:47+08:00 ] 0.0.0.0 /wenda/admin.php/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005284s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000231s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000240s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000125s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000350s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2015-06-14T11:03:47+08:00 ] 0.0.0.0 /wenda/admin.php/Login/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000586s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+
+[ 2015-06-14T11:03:55+08:00 ] 0.0.0.0 /wenda/admin.php/Login/verify/0.24158831289969385
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000472s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+
+[ 2015-06-14T11:04:00+08:00 ] 0.0.0.0 /wenda/admin.php/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000349s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `wd_admin` [ RunTime:0.002607s ]
+SQL: SELECT * FROM `wd_admin` WHERE ( `account` = 'admin' ) LIMIT 1   [ RunTime:0.000602s ]
+SQL: UPDATE `wd_admin` SET `logintime`=1434251040,`loginip`='0.0.0.0' WHERE ( `id` = 1 ) [ RunTime:0.002814s ]
+
+[ 2015-06-14T11:04:00+08:00 ] 0.0.0.0 /wenda/admin.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000397s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008980s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000222s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000222s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000133s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001049s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000327s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2015-06-14T11:04:00+08:00 ] 0.0.0.0 /wenda/admin.php/Index/copy.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001215s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002193s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004512s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000359s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000306s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000155s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001421s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001174s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001390s ]
+
+[ 2015-06-14T11:04:06+08:00 ] 0.0.0.0 /wenda/admin.php/Category/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000618s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.001002s ]
+SQL: SELECT * FROM `wd_category`  [ RunTime:0.000257s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022630s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000332s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000218s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000126s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001134s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000411s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2015-06-14T11:04:13+08:00 ] 0.0.0.0 /wenda/admin.php/Category/addChild/pid/19.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000351s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.009420s ]
+SQL: SELECT * FROM `wd_category` WHERE ( `id` = 19 ) LIMIT 1   [ RunTime:0.000367s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013043s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000362s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000205s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001681s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000645s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2015-06-14T11:04:18+08:00 ] 0.0.0.0 /wenda/admin.php/Category/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000553s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `wd_category` [ RunTime:0.009445s ]
+SQL: SELECT * FROM `wd_category`  [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022114s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000295s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000246s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000127s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001126s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000355s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2015-06-14T11:04:20+08:00 ] 0.0.0.0 /wenda/admin.php/Reward/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000395s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005219s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000201s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000221s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000130s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000324s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2015-06-14T11:04:23+08:00 ] 0.0.0.0 /wenda/admin.php/User/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000338s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `wd_user` [ RunTime:0.001142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wd_user` LIMIT 1   [ RunTime:0.000192s ]
+SQL: SELECT * FROM `wd_user` LIMIT 0,5   [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015080s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000351s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000344s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000202s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001637s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000548s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2015-06-14T11:04:25+08:00 ] 0.0.0.0 /wenda/admin.php/System/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000339s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006219s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000203s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000208s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000125s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000986s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000310s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-06-14T11:04:28+08:00 ] 0.0.0.0 /wenda/admin.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000338s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015322s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000372s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000334s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000137s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001395s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000332s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2015-06-14T11:04:28+08:00 ] 0.0.0.0 /wenda/admin.php/Index/copy.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003762s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000193s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000186s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000112s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000994s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000296s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2015-06-14T11:04:31+08:00 ] 0.0.0.0 /wenda/admin.php/Ask/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `wd_ask` [ RunTime:0.001142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wd_ask` LIMIT 1   [ RunTime:0.000181s ]
+SQL: SELECT * FROM `wd_ask` ORDER BY time DESC LIMIT 0,5   [ RunTime:0.000268s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013955s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000242s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000225s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000134s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001092s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000341s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2015-06-14T11:04:34+08:00 ] 0.0.0.0 /wenda/admin.php/Login/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000357s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+
+[ 2015-06-14T11:04:34+08:00 ] 0.0.0.0 /wenda/admin.php/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000344s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003830s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000178s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000184s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000108s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000867s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000275s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2015-06-14T11:04:34+08:00 ] 0.0.0.0 /wenda/admin.php/Login/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000547s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+

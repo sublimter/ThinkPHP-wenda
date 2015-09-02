@@ -1,0 +1,82 @@
+<include file='Common:header'/>
+	<link rel="stylesheet" href="__PUBLIC__/Css/ask.css" />
+	<script type="text/javascript" src='__PUBLIC__/Js/send.js'></script>
+	<script type="text/javascript">
+		var getCate = '{:U("getCate")}';
+		var on = false;
+		var point = 0;//用户金币，默认没有登录时是 0 
+		//判断是否已登录
+		<if condition='isset($_SESSION["uid"]) && isset($_SESSION["username"])'>
+			on = true;
+			point = {$point};
+		</if>
+	</script>
+</head>
+<body>
+	<include file='Common:top'/>
+	<div id='location'>
+		<a href="__APP__">问答系统</a>&nbsp;>&nbsp;提问
+	</div>
+
+<!--------------------中部-------------------->
+	<div id='center'>
+		<div class='send'>
+			<div class='title'>
+				<p class='left'>向网友们提问</p>
+				<p class='right'>您还可以输入<span id='num'>50</span>个字</p>
+			</div>
+			<form action="{:U('send')}" method='post'>
+				<div class='cons'>
+					<textarea name="content"></textarea>
+				</div>
+				<div class='reward'>
+					<span id='sel-cate' class='cate-btn'>选择分类</span>
+					<ul>
+						<li>
+							<if condition='isset($_SESSION["uid"]) && isset($_SESSION["username"])'>
+							我的金币：<span>{$point}</span>
+							</if>
+						</li>
+						<li>
+							悬赏：<select name="reward">
+								<option value="0">0</option>
+								<option value="5">5</option>
+								<option value="10">10</option>
+								<option value="15">15</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="50">50</option>
+								<option value="80">80</option>
+								<option value="100">100</option>
+							</select>金币
+						</li>
+					</ul>
+				</div>
+				<!--把获取的分类id保存在这个隐藏域以便于提交过去-->
+				<input type='hidden' name='cid' value='0'/>
+				<input type="submit" value='提交问题' class='send-btn'/>
+			</form>
+		</div>
+	</div>
+	<div id='category'>
+		<p class='title'>
+			<span>请选择分类</span>
+			<a href="" class='close-window'></a>
+		</p>
+		<div class='sel'>
+			<p>选择一个合适的分类：</p>
+			<select name="cate-one" size='16'>
+				<foreach name='cate' item='v'>
+					<option value="{$v.id}">{$v.name}</option>
+				</foreach>
+			</select>
+			<select name="cate-one" size='16' class='hidden'></select>
+			<select name="cate-one" size='16' class='hidden'></select>
+		</div>
+		<p class='bottom'>
+			<span id='ok'>确定</span>
+		</p>
+	</div>
+<!--------------------中部结束-------------------->
+
+<include file='Common:bottom'/>

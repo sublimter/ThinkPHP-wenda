@@ -1,0 +1,69 @@
+<include file='Common:header'/>
+	<link rel="stylesheet" href="__PUBLIC__/Css/member.css" />
+	<script type="text/javascript" src='__PUBLIC__/Js/member.js'></script>
+</head>
+<body>
+	<include file='Common:top'/>
+<!--------------------中部-------------------->
+	<div id='center'>
+		<include file='Common:mleft'/>
+		<div id='right'>
+			<p class='title'>我的回答</p>
+			<ul class='ask-filter'>
+				<li class='cur'>全部回答</li>
+				<li>被采纳的回答</li>
+			</ul>
+			<div class='list list-filter'>
+				<table>
+					<if condition='!$myAnswer'>
+						<tr height='140'>
+							<td>你还没有回答过问题</td>
+						</tr>
+					<else/>
+						<tr>
+							<th class='t1'>标题</th>
+							<th>回答</th>
+							<th class='t3'>更新时间</th>
+						</tr>
+						<foreach name='myAnswer' item='v'>
+							<tr>
+								<td class='t1'>
+									<a href="{:U('Show/index', array('id' => $v['id']))}">{$v.content}</a><span>[{$v.name}]</span>
+								</td>
+								<td>{$v.answer}</td>
+								<td class='t3'>{$v.time|time_to_format=###}</td>
+							</tr>
+						</foreach>
+					</if>
+				</table>
+			</div>
+			<div class='list list-filter hidden'>
+				<table>
+					<!--判断是否有被采纳的回答，检测数量有无-->
+					<if condition='!count'>
+						<tr height='140'>
+							<td>{$role}还没有被采纳的回答</td>
+						</tr>
+					</if>
+					<tr>
+						<th class='t1'>标题</th>
+						<th>回答</th>
+						<th class='t3'>更新时间</th>
+					</tr>
+					<foreach name='myAnswer' item='v'>
+						<if condition='$v["adopt"]'>
+							<tr>
+								<td class='t1'>
+									<a href="{:U('Show/index', array('id' =>$v['id']))}">{$v.content}</a><span>[{$v.name}]</span>
+								</td>
+								<td>{$v.answer}</td>
+								<td class='t3'>{$v.time|time_to_format=###}</td>
+							</tr>
+						</if>
+					</foreach>
+				</table>
+			</div>
+		</div>
+	</div>
+<!--------------------中部结束-------------------->
+<include file="Common:bottom"/>

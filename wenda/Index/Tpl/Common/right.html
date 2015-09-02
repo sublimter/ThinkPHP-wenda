@@ -1,0 +1,116 @@
+<div id='right'>
+	<if condition='!isset($_SESSION["uid"]) OR !isset($_SESSION["username"])'>
+		<div class='r-login'>
+			<span class='login'><i></i>&nbsp;登录</span>
+			<span class='register'><i></i>&nbsp;注册</span>
+		</div>
+	<else/>
+	<!--读取用户信息标签-->
+		<userinfo uid='$_SESSION["uid"]'>
+			<div class='userinfo'>
+				<dl>
+					<dt>
+						<a href="{:U('Member/index', array('id' => $id))}"><img src="{$face}" width='48' height='48'/></a>
+					</dt>
+					<dd class='username'>
+						<a href="{:U('Member/index', array('id' => $id))}"><b>{$username}</b><i class='level lv{$level}' title='Level {$level}'></i></a>
+					</dd>
+					<dd>金币：<a href="" style="color: #888888;"><b class='point'>{$point}</b></a></dd>
+					<dd>经验值：{$exp}</dd>
+				</dl>
+				<table>
+					<tr>
+						<td>回答数</td>
+						<td>采纳率</td>
+						<td class='last'>提问数</td>
+					</tr>
+					<tr>
+						<td><a href="">{$answer}</a></td>
+						<td><a href="">{$adopt}</a></td>
+						<td class='last'><a href="">{$ask}</a></td>
+					</tr>
+				</table>
+				<ul>
+					<li><a href="">我提问的</a></li>
+					<li><a href="">我回答的</a></li>
+				</ul>
+			</div>
+		</userinfo>
+	</if>
+
+	<div class='clear'></div>
+	<div class='star'>
+		<p class='title'>问答之星</p>
+		<span class='star-name'>本日回答最多的人</span>
+		<!-- 原生php本日回答之星 -->
+		<?php
+			$todayTime=strtotime(date('y-m-d'));
+			$sql='SELECT u.id AS id,username,face,exp,answer,u.adopt AS adopt FROM wd_answer a LEFT JOIN wd_user u ON a.uid=u.id WHERE time>'.$todayTime.' ORDER BY answer DESC LIMIT 1';
+			$answerOnDay=M()->query($sql);
+			$starUser=$answerOnDay[0];
+			$starUser['level']=exp_to_level($starUser['exp']);
+		?>
+			<div class='star-info'>
+				<div>
+					<a href="{:U('Member/index', array('id' => $starUser['id']))}" class='star-face'><img src="<if condition='$starUser["face"]'>__ROOT__/Uploads/Face/{$starUser.face}<else/>__PUBLIC__/Images/noface.gif</if>" width='48px' height='48px'/></a>
+					<ul>
+						<li><a href="{:U('Member/index', array('id' => $starUser['id']))}">{$starUser.username}</a></li>
+						<li><i class='level lv{$starUser.level}' title='Level {$starUser.level}'></i></li>
+					</ul>
+				</div>
+				<ul class='star-count'>
+					<li>回答数：<span>{$starUser.answer}</span></li>
+					<li>采纳率：<span>{:round($starUser['adopt']/$starUser['answer']*100,1)}%</span></li>
+				</ul>
+			</div>
+		<span class='star-name'>历史回答最多的人</span>
+		<!-- 原生php历史回答 -->
+		<?php
+			$todayTime=strtotime(date('y-m-d'));
+			$sql='SELECT id,username,face,exp,answer,adopt FROM wd_user ORDER BY answer DESC LIMIT 1';
+			$answerDay=M()->query($sql);
+			$result=$answerDay[0];
+			$result['level']=exp_to_level($result['exp']);
+		?>
+		<div class='star-info'>
+			<div>
+				<a href="{:U('Member/index', array('id' => $result['id']))}" class='star-face'><img src="<if condition='$result["face"]'>__ROOT__/Uploads/Face/{$result.face}<else/>__PUBLIC__/Images/noface.gif</if>" width='48px' height='48px'/></a>
+				<ul>
+					<li><a href="{:U('Member/index', array('id' => $result['id']))}">{$result.username}</a></li>
+					<li><i class='level lv{$result.level}' title='Level {$result.level}'></i></li>
+				</ul>
+			</div>
+			<ul class='star-count'>
+				<li>回答数：<span>{$result.answer}</span></li>
+				<li>采纳率：<span>{:round($result['adopt']/$result['answer']*100,1)}%</span></li>
+			</ul>
+		</div>
+	</div>
+
+
+	
+	<div class='star-list'>
+		<p class='title'>问答助人光荣榜</p>
+		<!-- 原生php -->
+		<?php
+			$todayTime=strtotime(date('y-m-d'));
+			$sql='SELECT id,username,answer FROM wd_user ORDER BY answer DESC LIMIT 5';
+			$answerAll=M()->query($sql);
+			// p($answerAll);
+		?>
+		<div>
+			<ul class='ul-title'>
+				<li>用户名</li>
+				<li style='text-align:right;'>帮助过的人数</li>
+			</ul>
+			<ul class='ul-list'>
+				<foreach name='answerAll' item='v'>
+					<li>
+						<a href="{:U('Member/index', array('id' => $v['id']))}"><i class='rank r{$key + 1}'></i>{$v.username}</a>
+						<span>{$v.answer}</span>
+					</li>
+				</foreach>
+			</ul>
+		</div>
+	</div>
+</div>

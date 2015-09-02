@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/public.css" />
+	<script type="text/javascript" src='__PUBLIC__/js/jquery-1.7.2.min.js'></script>
+</head>
+<body>
+	<table class="table">
+		<tr height='60'>
+			<th>ID</th>
+			<th>用户名</th>
+			<th>回答数</th>
+			<th>采纳数</th>
+			<th>提问数</th>
+			<th>金币</th>
+			<th>经验值</th>
+			<th>最后登录时间</th>
+			<th>最后登录IP</th>
+			<th>注册时间</th>
+			<th>帐号状态</th>
+			<th>操作</th>
+		</tr>
+		<foreach name='user' item='v'>
+			<tr height='50'>
+				<td align='center'>{$v.id}</td>
+				<td>{$v.username}</td>
+				<td align='center'>{$v.answer}</td>
+				<td align='center'>{$v.adopt}</td>
+				<td align='center'>{$v.ask}</td>
+				<td align='center'>{$v.point}</td>
+				<td align='center'>{$v.exp}</td>
+				<td>{$v.logintime|date='y-m-d H:i', ###}</td>
+				<td>{$v.loginip}</td>
+				<td>{$v.registime|date='y-m-d H:i', ###}</td>
+				<td align='center'>
+					<if condition='$v["lock"]'>锁定<else/>正常</if>
+				</td>
+				<td align='center'>
+					<if condition='$v["lock"]'>
+						<a href="{:U('lockUser', array('id' => $v['id'], 'lock' => 0))}">解除锁定</a>
+					<else/>
+						<a href="{:U('lockUser', array('id' => $v['id'], 'lock' => 1))}">锁定用户</a>
+					</if>
+				</td>
+			</tr>
+		</foreach>
+		<tr height='60'>
+			<td colspan='12' align='center'>
+				{$page}
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

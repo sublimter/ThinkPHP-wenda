@@ -1,0 +1,117 @@
+<include file='Common:header'/>
+	<link rel="stylesheet" href="__PUBLIC__/Css/show.css" />
+	<script type="text/javascript">
+		window.onload=function(){
+			$('#anw-sub').click(function(){
+				return $('textarea[name=content]').val()=='' ? false : true;
+			});
+		}
+	</script>
+</head>
+<body>
+	<include file="Common:top"/>
+	<div id='location'>
+		<a href="{:U('List/index')}">全部分类</a>&nbsp;&gt;&nbsp;
+		<location cid='$ask["cid"]'>
+			<a href="{:U('List/index', array('id' => $id))}">{$name}</a>
+			<if condition='$id != $ask["cid"]'>
+				&nbsp;&gt;&nbsp;
+			</if>
+		</location>
+	</div>
+
+<!--------------------中部-------------------->
+	<div id='center-wrap'>
+		<div id='center'>
+			<div id='left'>
+				<div id='answer-info'>
+					<div class='ans-state <if condition="!$ask['solve']">wait</if>'></div>
+					<div class='answer'>
+						<p class='ans-title'>{$ask.content}<if condition="$ask['reward'] gt 0"><b class='point'>{$ask.reward}</b></if></p>
+					</div>
+					<ul>
+						<li><a href="{:U('Member/index', array('id' => $ask['uid']))}">{$ask.username}</a></li>
+						<li><i class='level lv{$ask.level}' title='Level {$ask.level}'></i></li>
+						<li>{$ask.time|time_to_format=###}</li>
+					</ul>
+					
+					<!-- 未解决的,自己发布的问题不显示 -->
+					<if condition='!$ask["solve"] AND (isset($_SESSION["uid"])) AND $_SESSION["uid"]!=$ask["uid"]'>
+						<div class='ianswer'>
+							<form action="{:U('answer')}" method='post'>
+								<p>我来回答</p>
+								<textarea name="content"></textarea>
+								<!--保存问题的id放在隐藏域-->
+								<input type="hidden" name='aid' value='{$ask.id}'>
+								<input type="submit" value='提交回答' id='anw-sub'/>
+							</form>
+						</div>
+					</if>
+					<!-- 满意回答 -->
+					<if condition='$bingo'>
+						<div class='ans-right'>
+							<p class='title'><i></i>满意回答<span>{$bingo.time|time_to_format=###}</span></p>
+							<p class='ans-cons'>{$bingo.content}</p>
+							<dl>
+								<dt>
+									<a href="{:U('Member/index', array('id' => $bingo['uid']))}"><img src="<if condition='$bingo["face"]'>__ROOT__/Uploads/Face/{$bingo.face}<else/>__PUBLIC__/Images/noface.gif</if>" width='48' height='48'/></a>
+								</dt>
+								<dd>
+									<a href="{:U('Member/index', array('id' => $bingo['uid']))}">{$bingo.username}</a>
+								</dd>
+								<dd><i class='level lv{$bingo.exp|exp_to_level=###}'></i></dd>
+								<!-- 提供答案的人的采纳率 -->
+								<dd>{:round($bingo['adopt'] / $bingo['answer'] * 100,1)}%</dd>
+							</dl>
+						</div>
+					</if>
+				</div>
+
+				<div id='all-answer'>
+					<div class='ans-icon'></div>
+					<p class='title'>共 <strong>{$ask.answer}</strong> 条回答</p>
+					<ul>
+						<foreach name='answer' item='v'>
+							<li>
+								<div class='face'>
+									<a href="{:U('Member/index', array('id' => $v['uid']))}">
+										<img src="<if condition='$v["face"]'>__ROOT__/Uploads/Face/{$v.face}<else/>__PUBLIC__/Images/noface.gif</if>" width='48' height='48'/>{$v.username}
+									</a>
+								</div>
+								<div class='cons <if condition='$key%2'>fen<else/>blue</if>'>
+									<p>{$v.content}<span style='color:#888;font-size:12px'>&nbsp;&nbsp;({$v.time|time_to_format=###})</span></p>
+								</div>
+								<!--采纳按钮,未解决的以及是本人登录-->
+								<if condition='isset($_SESSION["uid"]) && $_SESSION["uid"]==$ask["uid"] && !$ask["solve"]'>
+									<a href="{:U('adopt', array('id' => $v['id'], 'aid' => $ask['id'], 'uid' => $v['uid']))}" class='adopt-btn'>采纳</a>
+								</if>
+							</li>
+						</foreach>
+					</ul>
+					<div class='page'>
+						{$page}
+					</div>
+				</div>
+				<!--待解决问题-->
+				<if condition='$wait'>
+					<div id='other-ask'>
+						<p class='title'>待解决的相关问题</p>
+						<table>
+							<foreach name='wait' item='v'>
+								<tr>
+									<td class='t1'><a href="{:U('Show/index', array('id' => $v['id']))}">{$v.content}</a></td>
+									<td>{$v.answer}&nbsp;回答数</td>
+									<td>{$v.time|time_to_format=###}</td>
+								</tr>
+							</foreach>
+						</table>
+					</div>
+				</if>
+			</div>
+
+			<include file='Common:right'/>
+		</div>
+	</div>
+<!--------------------中部结束-------------------->
+
+<include file='Common:bottom'/>
